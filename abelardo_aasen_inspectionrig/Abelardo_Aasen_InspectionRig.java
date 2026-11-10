@@ -1,24 +1,8 @@
-import java.awt.BasicStroke;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Font;
-import java.awt.FontMetrics;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Point;
-import java.awt.RenderingHints;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
-import java.awt.geom.AffineTransform;
-import java.awt.geom.Ellipse2D;
-import java.awt.geom.Line2D;
-import java.awt.geom.Path2D;
-import java.awt.geom.Point2D;
-import java.awt.geom.Rectangle2D;
+//Abelardo, Aasen Sofia P. 
+package abelardo_aasen_inspectionrig;
+import java.awt.*;
+import java.awt.event.*;
+import java.awt.geom.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -27,21 +11,10 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Locale;
 import javax.imageio.ImageIO;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.SwingUtilities;
-import javax.swing.Timer;
+import javax.swing.*;
 
-/**
- * Rail-mounted inspection rig.
- *
- * The carriage is stored in rig-local coordinates and translated onto the rail.
- * The rotor is a child of that transform: it scales and rotates about its hub,
- * then the tether is a Bresenham line from the fixed beacon to the rounded tip.
- *
- * Aasen Sofia Abelardo
- */
-public class InspectionRig {
+
+public class Abelardo_Aasen_InspectionRig {
     static final int VIEW_W = 720;
     static final int VIEW_H = 440;
     static final double PERIOD = 8.0;
@@ -93,7 +66,7 @@ public class InspectionRig {
             Verification.export(dir);
             return;
         }
-        SwingUtilities.invokeLater(InspectionRig::show);
+        SwingUtilities.invokeLater(Abelardo_Aasen_InspectionRig::show);
     }
 
     static void show() {

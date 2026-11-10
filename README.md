@@ -1,17 +1,19 @@
 # Inspection Rig
 
-Aasen Sofia Abelardo
+Abelardo, Aasen Sofia P.
 
 A rail-mounted inspection rig drawn with Java 2D. The carriage is local geometry placed by an `AffineTransform`. The rotor is a child transform that spins and scales about its hub. The tether is an integer Bresenham line from the fixed beacon to the rounded rotor tip.
 
 ## Build and run
 
+From the directory that contains the `abelardo_aasen_inspectionrig` folder:
+
 ```bash
-javac InspectionRig.java
-java InspectionRig
+javac abelardo_aasen_inspectionrig/Abelardo_Aasen_InspectionRig.java
+java abelardo_aasen_inspectionrig.Abelardo_Aasen_InspectionRig
 ```
 
-Uses only the Java standard library. One source file: `InspectionRig.java`.
+Uses only the Java standard library. The main class is `Abelardo_Aasen_InspectionRig` in package `abelardo_aasen_inspectionrig`.
 
 ## Controls
 
